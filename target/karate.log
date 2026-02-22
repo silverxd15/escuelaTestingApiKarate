@@ -1,0 +1,67 @@
+17:19:34.245 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @TEST-7
+17:19:34.314 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': dev
+17:19:34.391 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:19:35.217 [main] INFO  com.intuit.karate - karate.env system property was: dev 
+17:19:35.292 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/users/users.feature - call by tag at line 10: crearMascosta
+17:19:35.507 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 136
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":14,"category":{"id":0,"name":"string"},"name":"Max","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+17:19:36.132 [main] DEBUG com.intuit.karate - response time in milliseconds: 621
+1 < 200
+1 < Date: Sat, 21 Feb 2026 22:19:37 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":14,"category":{"id":0,"name":"string"},"name":"Max","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+17:19:36.148 [main] INFO  com.intuit.karate - [print] 14 
+17:19:36.163 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/14
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:19:36.449 [main] DEBUG com.intuit.karate - response time in milliseconds: 285
+1 < 200
+1 < Date: Sat, 21 Feb 2026 22:19:38 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":14,"category":{"id":0,"name":"string"},"name":"Max","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+17:19:36.452 [main] INFO  com.intuit.karate - [print] {
+  "id": 14,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "Max",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
+ 
